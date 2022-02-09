@@ -1,0 +1,73 @@
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.text-yellow {
+    color: #ebc633;
+}
+
+.text-orange {
+    color: #d96a26;
+}
+
+.text-purple {
+    color: #463fac;
+}
+
+.bg-orange {
+    background-color: #d96a26;
+}
+
+.btn-orange {
+    background-color: #d96a26;
+}
+
+.btn-cream {
+    background-color: #f0da99;
+}
+
+.btn-purple {
+    background-color: #463fac;
+}
+
+/* loader */
+.spinner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 9999;
+}
+
+.spinner::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 47%;
+    top: 45%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background:
+        radial-gradient(farthest-side, #d96a26 95%, #0000) 50% 1px/12px 12px no-repeat,
+        radial-gradient(farthest-side, #0000 calc(100% - 14px), #ccc 0);
+    animation: s9 2s infinite linear;
+}
+
+@keyframes s9 {
+    to {
+        transform: rotate(1turn);
+    }
+}
